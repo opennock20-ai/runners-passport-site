@@ -1,10 +1,1 @@
-import {cp,copyFile,mkdir,rm} from 'node:fs/promises';
-import {join,resolve} from 'node:path';
-const root=resolve('.'), out=join(root,'dist');
-await rm(out,{recursive:true,force:true});
-await mkdir(out,{recursive:true});
-for(const name of ['index.html','styles.css','app.js','favicon.svg','robots.txt','sitemap.xml','_headers']){
-  await copyFile(join(root,name),join(out,name));
-}
-await cp(join(root,'assets'),join(out,'assets'),{recursive:true});
-console.log('Runner\'s Passport static site ready at dist/');
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="13" fill="#405848"/><circle cx="32" cy="32" r="25" fill="none" stroke="#f4eddf" stroke-width="1.5"/><path d="M15 42c13-3 15-19 33-24M15 48c17-4 18-14 33-16" fill="none" stroke="#f4eddf" stroke-width="3" stroke-linecap="round"/><circle cx="48" cy="18" r="3.5" fill="#dcaf84"/></svg>

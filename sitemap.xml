@@ -1,3 +1,2 @@
-User-agent: *
-Disallow: /
-# Pre-launch preview: remove disallow and noindex on production launch.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://myrunnerspassport.com/</loc></url></urlset>
