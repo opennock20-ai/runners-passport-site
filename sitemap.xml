@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Pre-launch preview: remove disallow and noindex on production launch.
