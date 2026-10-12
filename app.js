@@ -78,3 +78,22 @@ function bind(){state.cart=safeGetCart();renderRaceGrid();renderFormOptions();se
  document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){closeEditor();closeBasket();closeNotice();hideMobileMenu()}});
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
+
+
+/* Premium edition interactive sample: front/back reveal and race switching. */
+function initialiseCollectorHero() {
+ const button=document.getElementById('hero-flip');
+ if(!button)return;
+ button.addEventListener('click',()=>{
+   const flipped=button.classList.toggle('is-flipped');
+   button.setAttribute('aria-pressed',String(flipped));
+   button.setAttribute('aria-label',flipped?'Show the illustrated front of the sample card':'Flip the sample card to see its personalised back');
+ });
+ const listing=document.getElementById('race-grid');
+ if(listing)listing.addEventListener('click',(event)=>{
+   const race=event.target.closest('[data-race]')?.dataset.race;
+   if(race)button.classList.remove('is-flipped');
+ });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initialiseCollectorHero);
+else initialiseCollectorHero();
