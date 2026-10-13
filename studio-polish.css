@@ -1,0 +1,55 @@
+
+/* Runner's Passport / Collector Studio: visual continuity with the new homepage */
+:root{--serif:'Bodoni Moda',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--cream:#f1ece3;--paper:#faf7f0;--sage:#20392d;--ink:#182b23;--warm:#c86145;--gold:#bc9975}
+html{scroll-padding-top:88px}
+body{background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+.site-header{background:#faf7f0f5!important;border-bottom:1px solid #21382e24!important;backdrop-filter:blur(18px);box-shadow:none}
+.brand-type{font:600 12px/1.2 var(--sans)!important;letter-spacing:.22em!important}
+.desktop-nav a{font:500 11px var(--sans);letter-spacing:0!important}
+.nav-cta{font-size:10px!important;letter-spacing:.1em!important;text-transform:uppercase;border:1px solid #1a382b!important;background:#163527!important;color:#fff!important}
+.nav-cta:hover{background:#c86145!important;border-color:#c86145!important}
+.atelier-hero{background:#f1ece3!important;min-height:610px!important}
+.atelier-hero-content{padding-top:95px!important;padding-bottom:95px!important}
+.atelier-hero h1{font-family:var(--serif)!important;font-weight:400!important;letter-spacing:-.075em!important;font-size:clamp(60px,6vw,98px)!important}
+.atelier-hero h1 em,.hero-final-line{color:#b86249!important}
+.atelier-book{background:#e1e2d8!important}
+.atelier-eyebrow,.kicker,.atelier-kicker{color:#ba6c50!important}
+.atelier-philosophy,.section,.faq-section{background:#faf7f0!important}
+.atelier-philosophy h2,.section-heading h2,.memory-copy h2,.album-offer-copy h2,.pack-story h2,.community-copy h2,.achievement-section h2,.digital-section h2,.atelier-endcap h2{font-family:var(--serif)!important;font-weight:400!important;letter-spacing:-.055em!important}
+.section-heading h2{font-size:clamp(52px,5vw,88px)!important;line-height:1.1!important}
+.section-heading h2 em{color:#b86249!important}
+.section-heading p{color:#667468!important;line-height:1.9!important}
+.collection-section{padding-top:105px!important;padding-bottom:95px!important}
+.collection-grid{gap:32px!important}
+.card-product{border:0!important;background:#e7e2d8!important;min-height:385px!important}
+.race-item:nth-child(2) .card-product{background:#dfe4dc!important}
+.race-item:nth-child(3) .card-product{background:#e6ddd7!important}
+.race-item:nth-child(4) .card-product{background:#e2e1d7!important}
+.card-surface{box-shadow:0 24px 43px #152a1d36!important}
+.race-item-bottom h3{font-family:var(--serif)!important;font-size:26px!important}
+.race-item-bottom strong{font:500 22px var(--serif)!important}
+.race-item-action{font:600 10px var(--sans)!important;letter-spacing:.12em!important;text-transform:uppercase}
+.button,.button-dark,.button-sage,.atelier-primary{border-radius:0!important;background:#193729!important;border:1px solid #193729!important;color:#fff!important;box-shadow:none!important}
+.button:hover,.atelier-primary:hover{background:#c86145!important;border-color:#c86145!important}
+.memory-reveal{background:#152b20!important}
+.pack-section{background:#f1ece3!important}
+.pack-interaction{background:radial-gradient(ellipse at 50% 30%,#527360,#1b3a2c)!important}
+.atelier-album-offer{background:#eae3d8!important}
+.digital-section{background:#f4f0e7!important}
+.dashboard-demo,.passport-dashboard{box-shadow:0 20px 65px #1a36201c!important}
+.achievement-section{background:#f8f5ee!important}
+.achievement-card{border-color:#1b392723!important}
+.community-section{background:#e2e8de!important}
+.atelier-endcap{background:#193729!important}
+.faq-grid details{border-color:#253b2d2b!important}
+.footer{background:#10271d!important}
+.editor-modal{background:#f9f5eb!important}
+.editor-top{background:#f5f0e6!important}
+.return-to-editorial{background:#bd624b!important;font:600 10px DM Sans,Arial,sans-serif!important;letter-spacing:.14em!important;text-transform:uppercase;box-shadow:0 10px 25px #071b1560!important}
+.return-to-editorial:hover{background:#183a2b!important}
+@media(max-width:720px){
+.atelier-hero-content{padding:80px 27px 45px!important}
+.atelier-hero h1{font-size:clamp(54px,11vw,82px)!important}
+.collection-section{padding-top:75px!important}
+.section-heading h2{font-size:clamp(47px,10vw,72px)!important}
+}
