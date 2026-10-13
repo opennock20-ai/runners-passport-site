@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="/assets/hero-editorial.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/art-gnr.webp" fetchpriority="high">
   <link rel="stylesheet" href="/editorial.css">
   <script src="/editorial.js" defer></script>
 </head>
@@ -52,7 +52,20 @@
 
   <main>
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <img class="hero-image" src="/assets/hero-editorial.webp" alt="Concept photograph of a running keepsake album with illustrated race memories" width="1320" height="880" fetchpriority="high">
+      <div class="hero-stage" aria-label="Two illustrated Runner's Passport concept cards">
+        <div class="hero-stage-orbit" aria-hidden="true"></div>
+        <div class="hero-card hero-card-second">
+          <div class="hero-card-heading">RUNNER'S PASSPORT <span>EDITION 002</span></div>
+          <img src="/assets/art-london.webp" alt="London race card artwork" width="442" height="640" fetchpriority="high">
+          <div class="hero-card-footer"><strong>London Marathon</strong><span>42.2 KM · LONDON</span></div>
+        </div>
+        <div class="hero-card hero-card-first">
+          <div class="hero-card-heading">RUNNER'S PASSPORT <span>EDITION 001</span></div>
+          <img src="/assets/art-gnr.webp" alt="Great North Run art featuring the Tyne Bridge at sunset" width="442" height="640" fetchpriority="high">
+          <div class="hero-card-footer"><strong>Great North Run</strong><span>21.1 KM · NEWCASTLE</span></div>
+        </div>
+        <span class="hero-stage-note">THE FIRST EDITION<br>ART MEETS ACHIEVEMENT.</span>
+      </div>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="shell hero-inner">
         <div class="hero-topline eyebrow">RUNNER'S PASSPORT / EST. 2026</div>
