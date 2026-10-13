@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#efeee7">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Your miles. Your moments. Kept forever. Explore illustrated, personalised running race cards and the premium linen Runner's Passport album.">
+  <meta name="description" content="Every finish line has a story. Keep yours. Collect original illustrated race cards in a beautifully crafted Runner’s Passport album. Discover the artwork you’ve earned.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Runner's Passport — Every finish line has a story">
   <meta property="og:description" content="Beautiful illustrated race cards personalised with your own running story. Collect the miles. Keep the memories.">
@@ -18,50 +18,52 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/premium.css">
   <link rel="stylesheet" href="/atelier.css">
+  <link rel="stylesheet" href="/experience.css">
   <script src="/app.js" defer></script>
   <script src="/atelier.js" defer></script>
-  <title>Runner's Passport | Collect the miles. Keep the memories.</title>
+  <script src="/experience.js" defer></script>
+  <title>Runner's Passport — Every finish line has a story</title>
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="nav-wrap">
       <a class="brand" href="#top" aria-label="Runner's Passport home">
-        <span class="brand-seal" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="17.5" stroke="currentColor" stroke-width="1"/><path d="M10 26c7-2 7-11 17-14M10 30c9-2 12-8 20-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="27" cy="12" r="2" fill="currentColor"/></svg></span>
+        <span class="brand-seal" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="17.5" stroke="currentColor" stroke-width="1"/><circle cx="29" cy="12" r="3.2" fill="#c96950"/><path d="M8 28c8-2 11-13 24-13M9 33c10-2 14-9 24-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
         <span class="brand-type"><span>RUNNER'S</span><span>PASSPORT</span></span>
       </a>
-      <nav class="desktop-nav" aria-label="Main navigation"><a href="#the-album">The passport</a><a href="#collection">Race cards</a><a href="#our-story">Our story</a></nav>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#the-album">The passport</a><a href="#collection">The collection</a><a href="#how-it-works">How it works</a><a href="#achievements">Achievements</a></nav>
       <div class="nav-actions">
         <button class="nav-cart icon-button" id="cart-open" type="button" aria-label="Open shopping basket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16l-1.3 12H5.3L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span id="cart-count" class="cart-count" hidden>0</span></button>
         <button id="mobile-toggle" class="mobile-toggle icon-button" aria-label="Open menu" aria-expanded="false" type="button"><span></span><span></span></button>
-        <button class="button button-dark nav-cta" data-action="open-editor" type="button">Preview your card <span aria-hidden="true">↗</span></button>
+        <button class="button button-dark nav-cta" id="start-passport-nav" type="button">Start your passport <span aria-hidden="true">↗</span></button>
       </div>
     </div>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#the-album">The passport</a><a href="#collection">Race cards</a><a href="#our-story">Our story</a><button type="button" data-action="open-editor">Preview your card ↗</button></nav>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#the-album">The passport</a><a href="#collection">The collection</a><a href="#how-it-works">How it works</a><a href="#achievements">Achievements</a><a href="#my-passport">My passport preview</a><button type="button" class="start-passport">Start your passport ↗</button></nav>
   </header>
   <main>
 
 <section class="atelier-hero" id="the-album" aria-labelledby="hero-title">
   <div class="atelier-hero-content">
-    <div class="atelier-eyebrow"><span class="atelier-star">✳</span> THE RUNNER'S PASSPORT COLLECTION <span class="edition-rule"></span> EST. 2026</div>
-    <h1 id="hero-title">Every finish line<br>has a <em>story.</em></h1>
-    <p>The races you ran. The moments you earned. Collected, one beautifully personal card at a time.</p>
-    <button type="button" class="atelier-primary" id="book-open-cta">Open the passport <span aria-hidden="true">↗</span></button>
+    <div class="atelier-eyebrow"><span class="atelier-star">✳</span> A LIFE IN RACES. BEAUTIFULLY KEPT. <span class="edition-rule"></span> EST. 2026</div>
+    <h1 id="hero-title">Every finish line<br>has a <em>story.</em><br><span class="hero-final-line">Keep yours.</span></h1>
+    <p>A beautiful home for the races you ran, the moments you earned and the memories you will one day pass down. Your story, collected one race at a time.</p>
+    <div class="hero-cta-pair"><button type="button" class="atelier-primary" id="book-open-cta">Explore the passport <span aria-hidden="true">↗</span></button><a class="quiet-cta" href="#how-it-works">See how it works →</a></div>
     <div class="atelier-hero-foot">A keepsake for the miles that made you.<span>—</span> Concept preview</div>
   </div>
   <div class="atelier-book" aria-label="Explore the Runner's Passport album">
     <div class="atelier-book-top"><span>AN OBJECT TO KEEP</span><span>THE PASSPORT / <strong id="book-count-top">01 OF 04</strong></span></div>
     <div class="book-photo-frame" id="book-photo-frame">
       <button class="book-photo-trigger" id="book-photo-trigger" type="button" aria-label="Open the Runner's Passport to the next page">
-        <img class="book-main-photo" id="book-main-photo" src="/assets/album-craft.webp" alt="The sage-green Runner's Passport linen album, closed" fetchpriority="high">
+        <img class="book-main-photo" id="book-main-photo" src="/assets/album-pages.webp" alt="An open Runner's Passport displaying illustrated collectible race cards, two per page" fetchpriority="high">
         <span class="book-turn-overlay" aria-hidden="true"><span class="book-turn-edge"></span></span>
       </button>
       <div class="book-photo-index" aria-hidden="true"><span class="index-line"></span><span id="book-photo-numeral">I</span></div>
     </div>
     <div class="book-navigation">
       <div class="book-navigation-caption" aria-live="polite" aria-atomic="true">
-        <span id="book-slide-category">01 / THE COVER</span>
-        <strong id="book-slide-title">A beautiful beginning.</strong>
-        <small id="book-slide-description">Sage-green linen. An emblem of the miles ahead.</small>
+        <span id="book-slide-category">03 / THE COLLECTION</span>
+        <strong id="book-slide-title">Every race has a place.</strong>
+        <small id="book-slide-description">Open pages full of artwork and memories, earned one race at a time.</small>
       </div>
       <div class="book-controls">
         <button type="button" class="book-arrow" id="book-prev" aria-label="Previous album page" disabled>←</button>
@@ -104,15 +106,57 @@
 </section>
     
 <section class="section collection-section" id="collection" aria-labelledby="collection-title">
-      <div class="section-heading"><div><span class="kicker">03 / THE RACE COLLECTION</span><h2 id="collection-title">Find the race<br>that made <em>you.</em></h2><p>Original illustrated places, made personal with the photograph and finish time only you could bring.</p></div><span class="small-index">THE ART IS THE BEGINNING.<br>THE MEMORY MAKES IT YOURS.</span></div>
+      <div class="section-heading"><div><span class="kicker">03 / THE RACE COLLECTION</span><h2 id="collection-title">The art of<br><em>earning memories.</em></h2><p>A few first-edition designs are yours to admire. Others stay concealed until you complete the race and collect its physical card.</p></div><span class="small-index">A FEW TO ADMIRE.<br>HUNDREDS STILL TO DISCOVER.</span></div>
       <div class="filter-row" role="group" aria-label="Filter race cards"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All races <span>04</span></button><button type="button" class="filter" data-filter="half" aria-pressed="false">Half marathons</button><button type="button" class="filter" data-filter="marathon" aria-pressed="false">Marathons</button><label class="race-search" for="race-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="race-search" type="search" placeholder="Search races" aria-label="Search races"></label></div>
       <div class="collection-grid" id="race-grid"></div>
+
+    <div class="concealed-heading"><div><span class="kicker">WHAT LIES BEYOND</span><h3>The next illustration is <em>yours to earn.</em></h3><p>These editions are shown only as sealed placeholders. Their art is never included in the public gallery.</p></div><span class="concealed-side-note">YOU KNOW THE RACE.<br>NOT YET THE ART.</span></div>
+    <div class="concealed-gallery" aria-label="Examples of concealed race editions">
+      <article class="concealed-card"><div class="concealed-art art-style-one"><span class="concealed-mark">✧</span><span class="concealed-copy">ARTWORK SEALED</span></div><div class="concealed-meta"><strong>Manchester Marathon</strong><span>Marathon · 2026 edition</span></div></article>
+      <article class="concealed-card"><div class="concealed-art art-style-two"><span class="concealed-mark">✧</span><span class="concealed-copy">ARTWORK SEALED</span></div><div class="concealed-meta"><strong>Yorkshire 10K</strong><span>10K · Coming collection</span></div></article>
+      <article class="concealed-card"><div class="concealed-art art-style-three"><span class="concealed-mark">✧</span><span class="concealed-copy">ARTWORK SEALED</span></div><div class="concealed-meta"><strong>Trail Edition</strong><span>Special accomplishment · Concealed</span></div></article>
+    </div>
       <div class="collection-foot"><span>✳ &nbsp; THESE ARE A GROWING COLLECTION — MORE RACES IN DEVELOPMENT</span><button class="text-link" id="request-race" type="button">Can't find your race? <span aria-hidden="true">→</span></button></div>
     </section>
     
-<section class="section steps-section" id="how-it-works" aria-labelledby="steps-title"><div class="section-heading centered"><span class="kicker">04 / HOW IT WORKS</span><h2 id="steps-title">So simple to<br><em>make it yours.</em></h2><p>Choose it. Personalise it. Give the memories somewhere to live.</p></div><div class="steps-grid"><article class="step"><span class="step-num">01</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.35"><rect x="18" y="13" width="44" height="56" rx="3"/><path d="M25 51h30M25 58h19M23 43l9-13 7 7 8-12 10 18"/><circle cx="50" cy="25" r="3"/></svg></div><h3>Choose your race</h3><p>Find the event you completed and choose its illustrated card from the collection.</p></article><article class="step"><span class="step-num">02</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.35"><rect x="12" y="17" width="56" height="47" rx="2"/><rect x="19" y="24" width="42" height="27"/><circle cx="32" cy="33" r="4"/><path d="m21 48 11-10 9 7 9-12 10 15M27 58h26"/></svg></div><h3>Make it personal</h3><p>Add your photo, finish time and a caption only you could write. This is your moment.</p></article><article class="step"><span class="step-num">03</span><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.35"><path d="M14 18c16-5 22-1 26 3 4-4 11-8 26-3v44c-14-5-23-1-26 3-5-4-11-8-26-3V18Z"/><path d="M40 21v43M21 28c5-1 9-1 13 1M21 37c5-1 9-1 13 1M47 29c4-2 8-2 13-1M47 38c4-2 8-2 13-1"/></svg></div><h3>Keep the memory</h3><p>Give your card a home in the Runner's Passport album. And let your collection grow.</p></article></div></section>
-    
 
+<section class="section steps-section" id="how-it-works" aria-labelledby="steps-title">
+  <div class="section-heading centered"><span class="kicker">04 / THE EXPERIENCE</span><h2 id="steps-title">Complete. Unlock.<br><em>Keep forever.</em></h2><p>There is a little magic in remembering something you truly earned.</p></div>
+  <div class="steps-grid experience-steps">
+    <article class="step"><span class="step-num">01</span><div class="step-icon" aria-hidden="true">↗</div><h3>Run your race</h3><p>Start wherever you are. Your first 5K matters just as much as somebody else's marathon.</p></article>
+    <article class="step"><span class="step-num">02</span><div class="step-icon" aria-hidden="true">◇</div><h3>Confirm your result</h3><p>Use an approved running-app connection or submit your result for checking.</p></article>
+    <article class="step"><span class="step-num">03</span><div class="step-icon" aria-hidden="true">✂</div><h3>Unseal your card</h3><p>Choose your photo and details, purchase the physical card and reveal its artwork in a digital pack.</p></article>
+    <article class="step"><span class="step-num">04</span><div class="step-icon" aria-hidden="true">✧</div><h3>Keep the story</h3><p>Your physical card comes home to your album; the digital edition joins your passport.</p></article>
+  </div>
+</section>
+
+<section class="pack-section" id="the-reveal" aria-labelledby="pack-title">
+  <div class="pack-story">
+    <span class="kicker">05 / THE MOMENT OF DISCOVERY</span>
+    <h2 id="pack-title">A little<br><em>moment of magic.</em></h2>
+    <p>You've completed the race. You've chosen a physical keepsake. Now comes the part you've been waiting for.</p>
+    <p>After payment, drag your finger across the seal. The pack opens, your artwork appears, and the card turns to reveal your own photograph and finish time.</p>
+    <div class="pack-promise">THE SURPRISE IS THE ARTWORK, NEVER A RANDOM PAID OUTCOME.</div>
+    <p class="pack-caveat">Try the public sample. This interactive preview accepts no payment and unlocks no purchased artwork.</p>
+  </div>
+  <div class="pack-interaction">
+    <div class="pack-stage" id="pack-stage" data-phase="sealed">
+      <div class="pack-paper" id="pack-paper">
+        <div class="pack-topline">A MEMORY, WAITING TO BE UNSEALED</div>
+        <div class="pack-inner-mark" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="43" stroke="currentColor" stroke-width="1.4"/><circle cx="74" cy="27" r="8" fill="#c66b4d"/><path d="M20 67c22-3 26-31 56-34M21 80c26-4 32-20 57-22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <div class="pack-brand">RUNNER'S<br>PASSPORT</div>
+        <div class="pack-subbrand">RACE EDITION · 2026</div>
+        <div class="pack-rip"><div class="rip-copy">DRAG TO BREAK THE SEAL <span aria-hidden="true">→</span></div><input id="tear-slider" type="range" min="0" max="100" step="1" value="0" aria-label="Slide right to tear open the sample pack"></div>
+        <div class="pack-rip-line" aria-hidden="true"></div>
+      </div>
+      <div class="demo-reveal-card" id="demo-reveal-card" hidden>
+        <div class="reveal-front"><div class="mini-code">RUNNER'S PASSPORT · RP-001</div><img src="/assets/art-gnr.webp" alt="Public sample Great North Run illustration"><strong>GREAT NORTH RUN</strong><span>NEWCASTLE · 2026 · 21.1 KM</span></div>
+        <div class="reveal-back" hidden><span class="mini-code">YOUR MEMORY. BEAUTIFULLY KEPT.</span><div class="sample-polaroid"><img src="/assets/card-back-photo.webp" alt="Sample race day photo"><span>One for the memory books.</span></div><div class="sample-stats"><span>EVENT <b>Great North Run</b></span><span>DATE <b>13 Sep 2026</b></span><span>TIME <b>01:48:32</b></span></div><div class="sample-stamp">RP</div></div>
+      </div>
+    </div>
+    <div class="pack-controls"><span id="pack-hint" role="status" aria-live="polite">Slide the tab to the right to open the sample pack.</span><button type="button" class="pack-control-button" id="pack-button">Open sample pack ↗</button></div>
+  </div>
+</section>
 <section class="atelier-album-offer" aria-labelledby="album-offer-title">
   <div class="atelier-album-photo">
     <img src="/assets/album-craft.webp" alt="Close-up of the album's linen cover and crafted binding" loading="lazy" id="album-detail-photo">
@@ -132,6 +176,36 @@
   </div>
 </section>
 
+
+<section class="digital-section section" id="my-passport" aria-labelledby="digital-title">
+  <div class="section-heading"><div><span class="kicker">07 / YOUR DIGITAL PASSPORT</span><h2 id="digital-title">A lifetime of<br><em>beautiful chapters.</em></h2><p>Your own collection, your own memories, and the next accomplishment waiting on the horizon.</p></div><span class="small-index">THE PASSPORT IS<br>YOURS TO MAKE.</span></div>
+  <div class="digital-dashboard">
+    <div class="dashboard-top"><div class="dashboard-avatar">RP</div><div><span class="demo-mini-label">THE DIGITAL COLLECTION · CONCEPT</span><h3>My running story</h3><span>Your personal passport overview</span></div><span class="dashboard-demo-label">SAMPLE PROFILE</span></div>
+    <div class="dashboard-stats"><div><strong>12</strong><span>Cards collected</span></div><div><strong>18</strong><span>Races completed</span></div><div><strong>05</strong><span>Ready to unlock</span></div><div><strong>412</strong><span>Kilometres recorded</span></div></div>
+    <div class="dashboard-columns">
+      <div><div class="dashboard-heading"><h4>The collection</h4><span>YOURS ALONE</span></div><div class="digital-pockets">
+        <article><img src="/assets/art-gnr.webp" alt="Great North Run public art"><strong>Great North Run</strong><small>2026 · Collected</small></article>
+        <article><img src="/assets/art-london.webp" alt="London Marathon public art"><strong>London Marathon</strong><small>2026 · Collected</small></article>
+        <article class="digital-pocket-locked"><div><span>✧</span><small>UNREVEALED</small></div><strong>Your next chapter</strong><small>Artwork still sealed</small></article>
+      </div></div>
+      <div><div class="dashboard-heading"><h4>Almost yours</h4><span>PERSONAL PROGRESS</span></div>
+        <div class="dashboard-milestone"><div><strong>100 kilometre milestone</strong><span>28 km remaining</span></div><div class="milestone-track"><i style="width:72%"></i></div></div>
+        <div class="dashboard-milestone"><div><strong>5 half marathons</strong><span>2 races remaining</span></div><div class="milestone-track"><i style="width:60%"></i></div></div>
+        <div class="dashboard-milestone"><div><strong>Sub-25 minute 5K</strong><span>2 minutes to improve</span></div><div class="milestone-track"><i style="width:68%"></i></div></div>
+        <p class="dashboard-note">Demonstration figures only. No account or running service is connected yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="achievement-section section" id="achievements" aria-labelledby="achievement-title">
+  <div class="section-heading"><div><span class="kicker">08 / THE ACHIEVEMENTS</span><h2 id="achievement-title">There is always<br><em>something worth earning.</em></h2><p>First runs. Small breakthroughs. Big finish lines. Meaningful milestones for every ability, with beautiful editions that grow alongside you.</p></div><div class="achievement-tiers"><span>CLASSIC</span><span>SIGNATURE</span><span>EXCEPTIONAL</span></div></div>
+  <div class="achievement-tabs" role="group" aria-label="Filter achievement types"><button type="button" class="active" data-achievement-filter="all">All</button><button type="button" data-achievement-filter="firsts">Firsts</button><button type="button" data-achievement-filter="distance">Distance</button><button type="button" data-achievement-filter="speed">Speed</button><button type="button" data-achievement-filter="races">Races</button><button type="button" data-achievement-filter="consistency">Consistency</button><button type="button" data-achievement-filter="adventure">Adventure</button></div>
+  <div class="achievement-grid" id="achievement-grid"></div><div class="achievement-more"><span id="achievement-count">Explore the catalogue</span><button type="button" id="show-more-achievements">Show more milestones ↗</button></div>
+</section>
+<section class="community-section" id="community" aria-labelledby="community-title">
+  <div class="community-copy"><span class="kicker">09 / A COMMUNITY OF MEMORIES</span><h2 id="community-title">Better stories<br><em>shared together.</em></h2><p>Follow the people who inspire you. Celebrate their finish lines, share your own stories, and give the memories a home.</p><p>Friends can see you've earned an edition, but its artwork stays hidden until they've revealed that same card themselves. The surprise never disappears.</p><div class="community-note">YOUR PROFILE. YOUR PHOTOS. YOUR PRIVACY.</div></div>
+  <div class="community-example"><div class="post-head"><div class="post-avatar">S</div><div><strong>Sam's running journal</strong><span>Shared running memory · Example</span></div><span>•••</span></div><p>“I never thought I could finish my first half. I'll remember this day forever.”</p><div class="post-secret"><div><span>✧</span><strong>A NEW CARD COLLECTED</strong><small>ARTWORK SEALED FOR YOU</small></div></div><div class="post-foot"><span>♡ &nbsp; Celebrate</span><span>Discover their story ↗</span></div></div>
+</section>
 <section class="atelier-endcap" aria-labelledby="endcap-title">
   <span class="atelier-kicker">A COLLECTION ONLY YOU COULD MAKE</span>
   <h2 id="endcap-title">You've done the miles.<br><em>Now make them yours.</em></h2>
@@ -141,7 +215,7 @@
 <section class="faq-section section" aria-labelledby="faq-title"><span class="kicker">GOOD TO KNOW</span><h2 id="faq-title">The little <em>details.</em></h2><div class="faq-grid"><details><summary>How much do the cards cost?</summary><p>Each personalised race card is £4.99. For UK card-only orders, our planned shipping is 99p for a single card and free delivery for two or more. Final pricing will be confirmed at launch.</p></details><details><summary>Can I use my own race photograph?</summary><p>Absolutely. Upload a photo and add your result and personal caption in our card personaliser. The current site is a preview: photos stay in your browser and are not sent to us.</p></details><details><summary>Are the cards ready to order?</summary><p>We're perfecting the print finish and final artwork. The website currently lets you build a preview and explore the basket; payment and real orders are not yet enabled.</p></details><details><summary>What races will you offer?</summary><p>We're starting with a small UK collection, including the Great North Run and major marathons. More events will follow as we validate the artwork and permissions.</p></details></div></section>
   
 </main>
-  <footer class="footer"><div class="footer-upper"><div><a class="footer-brand" href="#top">RUNNER'S<br>PASSPORT<span>✳</span></a><p>Collect the miles.<br>Keep the memories.</p></div><div class="footer-links"><div><strong>EXPLORE</strong><a href="#collection">Race cards</a><a href="#the-album">The album</a><a href="#how-it-works">How it works</a></div><div><strong>ABOUT</strong><a href="#our-story">Our story</a><button type="button" id="footer-help">Need help?</button><a href="#faq-title">FAQs</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> RUNNER'S PASSPORT</span><span>AN INDEPENDENT UK BRAND IN THE MAKING</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+  <footer class="footer"><div class="footer-upper"><div><a class="footer-brand" href="#top">RUNNER'S<br>PASSPORT<span>✳</span></a><p>Collect the miles.<br>Keep the memories.</p></div><div class="footer-links"><div><strong>EXPLORE</strong><a href="#collection">The collection</a><a href="#the-album">The album</a><a href="#achievements">Achievements</a></div><div><strong>ABOUT</strong><a href="#our-story">Our story</a><button type="button" id="footer-help">Need help?</button><a href="#faq-title">FAQs</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> RUNNER'S PASSPORT</span><span>AN INDEPENDENT UK BRAND IN THE MAKING</span><a href="#top">BACK TO TOP ↑</a></div></footer>
   <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
   <aside class="basket-drawer" id="basket-drawer" role="dialog" aria-modal="true" aria-labelledby="basket-title" aria-hidden="true"><div class="drawer-top"><div><span class="kicker">YOUR LITTLE COLLECTION</span><h2 id="basket-title">Your basket <span id="basket-header-count">(0)</span></h2></div><button type="button" class="circle-close" id="cart-close" aria-label="Close basket">×</button></div><div class="basket-content" id="basket-items"><div class="basket-empty"><span>✳</span><h3>Your story starts here.</h3><p>Your basket is waiting for its first keepsake.</p></div></div><div class="basket-summary"><div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">£0.00</strong></div><div class="summary-line"><span>Estimated UK delivery</span><span id="cart-shipping">—</span></div><div class="summary-total"><span>Estimated total</span><strong id="cart-total">£0.00</strong></div><button class="button button-sage button-block" type="button" id="checkout-button" disabled>Checkout opens soon <span>↗</span></button><p class="small-disclaimer">Preview basket only. No payment will be taken and no order will be placed. Albums and international postage calculated at launch.</p></div></aside>
   <div class="modal-backdrop" id="editor-backdrop" hidden></div>

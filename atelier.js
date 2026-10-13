@@ -46,7 +46,7 @@
       alt: "A close-up of the album's textured linen cover and bookbinding"
     }
   ];
-  let current = 0, turning = false, swipeStart = null, suppressNextClick = false;
+  let current = 2, turning = false, swipeStart = null, suppressNextClick = false;
 
   function getImageSource(slide) {
     if (slide.filename === slide.fallback) return Promise.resolve(slide.fallback);
